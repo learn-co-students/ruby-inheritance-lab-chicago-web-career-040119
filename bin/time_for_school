@@ -12,9 +12,25 @@ avi = Teacher.new
 avi.first_name = "Avi"
 avi.last_name = "Flombaum"
 
+jim = User.new
+jim.first_name = "Jim"
+jim.last_name = "Hendricks"
 
-some_knowledge = avi.teach 
 
-steve.learn(some_knowledge)
+some_knowledge = avi.teach
+ruby = avi.teach
+java = avi.teach
+python = avi.teach
 
+#What happens when you try to call #learn on jim?
+
+# jim.learn(ruby)
+# jim.learn(java)
+# jim.learn(python)
+
+steve.learn(java)
+steve.learn(js)
+steve.learn(python)
+
+#puts "Jim just learned this important knowledge: '#{jim.knowledge.first}' from Avi"
 puts "Steve just learned this important knowledge: '#{steve.knowledge.first}' from Avi"
